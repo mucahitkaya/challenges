@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;400&family=Poppins&display=swap');
+
+/* orange:#FC7613,,, butonbg:#262e37 */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Heebo",sans-serif;
+}
+
+
+
+.container{
+    margin: 40vh auto;
+    padding: 2em;
+    width: 500px;
+    height: auto;
+    background-color:#1E252F ;
+    border-radius: 15px;
+}
+.inside-container{
+    margin: 1em;
+}
+.star{
+    margin: 1em 0px;
+}
+.info{
+    padding: 1em  0px;
+}
+.rating{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.rating-btn{
+    color: #FCFFFF;
+    border: none;
+    width: 56px;
+    height: 56px;
+    border-radius: 28px;
+    background-color: #262e37;
+    font-size: 1em;
+}
+
+
+.submit-btn{
+    width:100%;
+    height: 56px;
+    background-color: #FC7613;
+    border-radius: 28px;
+}
+
+h1{
+    color:#FCFFFF;
+}
+p{
+    color: #555B67;
+}

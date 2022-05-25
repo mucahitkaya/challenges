@@ -1,69 +1,97 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Heebo:wght@100;400&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "DM Sans",sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Heebo:wght@100;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
 }
-:root{
-    --bg:#F7E9DC;
-    --selectedday:#76B5BC;
-    --boldtext: #3A281A;
-    --thintext: #AFA9A1;
-    --secondcard: #FFFCF7;
-    --orange: #EC755D;
+:root {
+  --bg: #f7e9dc;
+  --selectedday: #76b5bc;
+  --boldtext: #3a281a;
+  --thintext: #afa9a1;
+  --secondcard: #fffcf7;
+  --orange: #ec755d;
+  --littledude: #4b3a2a;
 }
-body{
-    background-color: var(--bg);
+body {
+  background-color: var(--bg);
 }
-main{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20vh;
 }
-.balance-container{
-    display: flex;
-    justify-content: space-between;
-    background-color: var(--orange);
-    color: var(--secondcard);
-    width: 380px;
-    height: auto;
-    padding: 1em;
-    border-radius: 24px;
+.balance-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--orange);
+  color: var(--secondcard);
+  width: 380px;
+  height: auto;
+  padding: 1em;
+  border-radius: 24px;
 }
-.balance-container h3{
-    font-weight: 400;
+.balance-container h3 {
+  font-weight: 400;
 }
-.balance-container p{
-    font-weight: 700;
+.balance-container p {
+  font-weight: 700;
 }
-.chart-container{
-    margin-top: 1.5em;
-    width: 380px;
-    min-height: 400px;
-    padding: 1em;
-    background-color: var(--secondcard);
-    border-radius: 24px;
+.chart-container {
+  margin-top: 1.5em;
+  width: 380px;
+  min-height: 400px;
+  padding: 1em;
+  background-color: var(--secondcard);
+  border-radius: 24px;
 }
-.chart-card{
-    width: 80%;
-    background-color: var(--orange);
+.chart-card {
+  width: 90%;
+  background-color: var(--secondcard);
 }
-.chart-container .header{
-    margin: 8px 1px;
-    color: var(--boldtext);
-    font-weight: 700;
-}
-.each-spending-chart{
-    
-}
-
-
-
-#design{
-    margin-top: 200px;
-    width: 800px;
-    height: 800px;
+.chart-container .header {
+  margin: 8px 1px;
+  color: var(--boldtext);
+  font-weight: 700;
 }
 
+.chart-card {
+  margin: 3em auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.day {
+  margin: 6px;
+  color: var(--thintext);
+}
+.amount-graph {
+  display: flex;
+  align-items: flex-start;
+  border-radius: 4px;
+  background-color: #ec755d;
+}
+.chart-active {
+  background-color: var(--selectedday);
+}
+
+.mamut {
+  border-radius: 6px;
+  margin-bottom: 6px;
+  background-color: var(--littledude);
+  color: var(--bg);
+}
+.amount {
+  background-color: #afa9a1;
+}
+br {
+  width: 90%;
+  height: 34px;
+  background-color: var(--orange);
+}
+.hide {
+  display: none;
+}

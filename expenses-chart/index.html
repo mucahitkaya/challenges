@@ -1,37 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Expenses Chart</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <main>
-        <div class="balance-container">
-            <div class="balance-amount">
-                <h3>My Balance</h3>
-                <h2>$223.42</h2>
-            </div>
-            <div class="logo-container">
-                <img src="./assets/logo.svg" alt="logo" >
-            </div>
+      <div class="balance-container">
+        <div class="balance-amount">
+          <h3>My Balance</h3>
+          <h2>$223.42</h2>
         </div>
-        <div class="chart-container">
-            <div class="header">
-                <h2>Spending - Last 7 days</h2>
-            </div>
-            <div class="chart-card">
-                <div class="each-spending-chart">
-                    asdasd
-                </div>
-            </div>
+        <div class="logo-container">
+          <img src="./assets/logo.svg" alt="logo" />
         </div>
+      </div>
+      <div class="chart-container">
+        <div class="header">
+          <h2>Spending - Last 7 days</h2>
+        </div>
+
+        <div class="chart-card">
+          <template class="template">
+            <div class="graph-card">
+              <div class="amount-graph mamut hide"></div>
+              <div class="amount-graph"></div>
+              <p class="day">mon</p>
+            </div>
+          </template>
+        </div>
+        <br />
+      </div>
     </main>
 
-    <img id="design" src="./assets/desktop-design.jpg" alt="" >
     <script src="app.js"></script>
-</body>
+  </body>
 </html>

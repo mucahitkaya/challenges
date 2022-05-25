@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Heebo:wght@100;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans",sans-serif;
+}
+:root{
+    --bg:#F7E9DC;
+    --selectedday:#76B5BC;
+    --boldtext: #3A281A;
+    --thintext: #AFA9A1;
+    --secondcard: #FFFCF7;
+    --orange: #EC755D;
+}
+body{
+    background-color: var(--bg);
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.balance-container{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--orange);
+    color: var(--secondcard);
+    width: 380px;
+    height: auto;
+    padding: 1em;
+    border-radius: 24px;
+}
+.balance-container h3{
+    font-weight: 400;
+}
+.balance-container p{
+    font-weight: 700;
+}
+.chart-container{
+    margin-top: 1.5em;
+    width: 380px;
+    min-height: 400px;
+    padding: 1em;
+    background-color: var(--secondcard);
+    border-radius: 24px;
+}
+.chart-card{
+    width: 80%;
+    background-color: var(--orange);
+}
+.chart-container .header{
+    margin: 8px 1px;
+    color: var(--boldtext);
+    font-weight: 700;
+}
+.each-spending-chart{
+    
+}
+
+
+
+#design{
+    margin-top: 200px;
+    width: 800px;
+    height: 800px;
+}
+

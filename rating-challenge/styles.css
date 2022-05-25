@@ -16,12 +16,22 @@ a{
     color: inherit;    
 }
 .container{
+    display: block;
     margin: 30vh auto;
-    padding: 2em;
     width: 500px;
     height: auto;
     background-color:#1E252F ;
     border-radius: 15px;
+    padding: 2em;
+}
+.firstpage{
+    display: block;
+}
+.secondpage{
+    display: block;
+}
+.remove{
+    display:none;
 }
 .inside-container{
     margin: 1em;

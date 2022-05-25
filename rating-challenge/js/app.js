@@ -1,28 +1,31 @@
 const btn = document.querySelectorAll(".rating-btn");
-// const submitBtn = document.getElementById("submit");
+const submitBtn = document.getElementById("submit");
 const selectedRating = document.querySelector("#rating-value");
-var el= document.getElementById('submit');
+const firstPage=document.getElementById("firstpage");
+const secondPage= document.getElementById("secondpage")
+let x;
 
-
-let rating=0;
 btn.forEach((btns)=>{
     btns.addEventListener("click",()=>{
           console.log(btns.textContent);
-          rating=btns.textContent;
+          deneme(btns.textContent);
     })
 });
-
-selectedRating.textContent="agaga";
-
-
-// if(el){
-//   el.addEventListener('click', ()=>{
-    //   });
-    // }
-    
-    window.addEventListener("submit",()=>{
-         document.location.href="http://127.0.0.1:5500/rating-challenge/submittedpage.html";
+function deneme(value){
+x=value;
+ console.log("uff"+x);
+ 
+}
+submitBtn.addEventListener("click",()=>{
+    if(secondPage.classList.contains("remove")){
+        secondPage.classList.remove("remove");
+        firstPage.classList.add("remove");
+       console.log(deneme());
+    }
 })
+
+
+    
 
 
 

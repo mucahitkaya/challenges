@@ -9,8 +9,8 @@
 </head>
 <body>
     
-        <div class="container">
-            <div class="inside-container">
+        <main class="container">
+            <div id="firstpage" class="firstpage ">
                 <div class="star">
                     <button class="rating-btn"><img src="./assets/icon-star.svg" alt=""></button>
                 </div>
@@ -26,12 +26,22 @@
                     <button class="rating-btn">5</button>
                 </div>
                 <div class="rating-submit">
-                    <button type="submit" id="submit" class="submit-btn">SUBMIT</button>
+                    <button id="submit" class="submit-btn">SUBMIT</button>
                 </div>
-               
+            </div>
+
+            <div id="secondpage" class="secondpage remove">
+                <div class="selected-value">
+                    <h3> You selected <span id="rating-value">4</span> out of 5</h3>
+                </div>
+        
+                <div class="thanks">
+                    <h1>Thank you!</h1>
+                    <p>We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+                </div>
         
             </div>
-        </div>
+        </main>
     
     <script src="./js/app.js"></script>
 </body>

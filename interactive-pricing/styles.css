@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Manrope:wght@600;800&display=swap");
+:root {
+  /* Full Slider Bar */
+  --softCyan: hsl(174, 77%, 80%);
+  /* Slider Backround */
+  --strongCyan: hsl(174, 86%, 45%);
+  /* Discount Background */
+  --lightGrayish: hsl(14, 92%, 95%);
+  /* Discount Text */
+  --lightRed: hsl(15, 100%, 70%);
+  /* CTA Text */
+  --paleBlue: hsl(226, 100%, 87%);
+
+  /* Pricing Component Background */
+  --white: hsl (0, 0%, 100%);
+  /* Main Background */
+  --veryPaleBlue: hsl(230, 100%, 99%);
+  /* Empty Slider Bar */
+  --lightGrayishBlue: hsl(224, 65%, 95%);
+  /* Toggle Background */
+  --lightGrayishBlue: hsl(223, 50%, 87%);
+  /* Text */
+  --grayishBlue: hsl(225, 20%, 60%);
+  /* Text & CTA Background */
+  --darkDesaturatedBlue: hsl(227, 35%, 25%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+#bg {
+  width: 100%;
+  height: 40vh;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .introduction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 1em 2em;
+}
+h1 {
+  font-size: 1.8em;
+  font-weight: 800;
+  color: var(--darkDesaturatedBlue);
+}
+h2 {
+  font-size: 1em;
+  font-weight: 600;
+  color: var(--grayishBlue);
+}
+.bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+.pricing-card {
+  width: 86vw;
+  height: auto;
+  margin-top: 4em;
+  padding-bottom: 4em;
+  background-color: var(--veryPaleBlue);
+  border-radius: 8px;
+}
+.pricing-section {
+  padding: 1em;
+}
+.inside-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: inherit;
+  padding: 3em;
+}
+.view-value {
+  font-size: 1em;
+  font-weight: 600;
+  color: var(--grayishBlue);
+}
+.range {
+  margin: 4em 0px;
+}
+#range-input {
+  width: 400px;
+  height: 15px;
+  -webkit-appearance: none;
+  border-radius: 15px;
+  background-color: var(--lightGrayishBlue);
+  outline: none;
+  opacity: 0.7;
+}
+
+#range-input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--strongCyan);
+  cursor: pointer;
+}
+.price-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+.year-select {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#year-input {
+  position: relative;
+  width: 50px;
+  height: 26px;
+  -webkit-appearance: none;
+  background-color: var(--grayishBlue);
+  border-radius: 13px;
+  outline: none;
+  transition: 0.3s;
+}
+#year-input:checked {
+  background-color: var(--strongCyan);
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border-radius: 16px;
+  background: #fff;
+}
+#year-input::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border-radius: 16px;
+  background: #fff;
+  top: 0;
+  left: 0;
+  /* transition: 0.5s; */
+}
+/* #year-input:checked::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border-radius: 16px;
+  background: #fff;
+  right: 0;
+} */

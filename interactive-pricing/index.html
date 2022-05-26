@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+    <title>Interactive-Price</title>
+  </head>
+  <body>
+    <img id="bg" class="bg" src="./assets/bg-pattern.svg" alt="bg-pattern" />
+    <main>
+      <div class="introduction">
+        <h1>Simple, traffic-based pricing</h1>
+        <h2>Sign-up for our 30-day trial. No credit card required</h2>
+      </div>
+      <div class="pricing-card">
+        <div class="inside-card">
+          <div class="view-value"><span>100</span>K PAGEVİEWS</div>
+          <div class="range">
+            <input
+              id="range-input"
+              type="range"
+              min="0"
+              max="200"
+              value="0"
+              step="30"
+            />
+          </div>
+        </div>
+        <div class="price-section">
+          <h1 class="price">$<span>123</span></h1>
+          <h2 class="price year"><span>/month</span></h2>
+        </div>
+        <div class="year-select">
+          <h2>Monthly Billing</h2>
+          <input id="year-input" type="checkbox" />
+          <h2>Yearly Billing</h2>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

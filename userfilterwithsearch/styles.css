@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.search-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.search-wrapper input {
+  width: 20%;
+  border-radius: 8px;
+  border: 1px solid black;
+}
+.hide {
+  display: none;
+}
+.card {
+  border: 1px solid black;
+}
+.user-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}

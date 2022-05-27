@@ -118,6 +118,19 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 1em;
+}
+#discount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--lightGrayish);
+  border-radius: 13px;
+  height: 26px;
+  width: 60px;
+}
+#discount h2 {
+  color: var(--lightRed);
 }
 #year-input {
   position: relative;
@@ -131,12 +144,26 @@ h2 {
 }
 #year-input:checked {
   background-color: var(--strongCyan);
+}
+#year-input:checked::after {
+  background-color: var(--strongCyan);
   content: "";
   position: absolute;
   width: 24px;
   height: 24px;
   border-radius: 16px;
   background: #fff;
+  left: 24px;
+}
+#year-input:checked::before {
+  background-color: var(--strongCyan);
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border-radius: 16px;
+  background: #fff;
+  left: 24px;
 }
 #year-input::before {
   content: "";
